@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+cppvs/Debug/*
+cppvs/.vs/*
+cppvs/cppvs/Debug/*
+
