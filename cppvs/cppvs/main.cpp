@@ -3,9 +3,17 @@
 #include <string>
 #include <time.h>
 #include <ctime>
+#include "file.h"
+//宏定义
+#define ABS = "5"
 
 using namespace std;// 函数声明
-
+					// 第二个命名空间
+namespace space {
+	void func() {
+		cout << "Inside second_space" << endl;
+	}
+}
 
 int main() {
 
@@ -50,7 +58,19 @@ int main() {
 	}
 
 
-	
+	file f;
+	//f.openFile();
+	try
+	{
+		// 保护代码
+	}
+	catch (exception e)
+	{
+		// 处理 ExceptionName 异常的代码
+	}
+	using namespace space;
+	func();
+	//throw "throw test";
 
 	return 0;
 }
